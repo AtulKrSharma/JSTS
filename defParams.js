@@ -22,3 +22,10 @@ function dontCallMe(salute, location = 'Mississauga') {
 
 dontCallMe('atul');
 dontCallMe('atul', 'Palam');
+
+function dontCallMeX(salute = 'Hello', location) {
+  console.log(`Hello, ${salute} and welcome to ${location}`);
+}
+
+dontCallMeX('Missis');
+dontCallMeX('atul', 'Palam');
