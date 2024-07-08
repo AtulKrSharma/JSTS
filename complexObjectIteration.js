@@ -1,17 +1,18 @@
-let myObj = {
-    name: 'atul',
-    dept: 'tech',
-    age: 30,
-    city: 'Mississauga',
-    projects: {
-        java: 'selenium',
-        js: 'cypress',
-        ts: 'playwright'
-    },
-    friends: ['Rakesh', 'Anuj', 'Deswal', 'Dada', 'Monty']
+let student = {
+  name: 'atul',
+  college: 'aset',
+  friends: {
+    mech4: 'deswal',
+    mech3: 'dada',
+    mech2: 'babbal',
+  },
 };
 
-for (const key in myObj) {
-    console.log(key);
-    console.log(myObj[key]);
+for (let key in student) {
+  if (typeof student[key] === 'object') {
+    console.log(`${key}:`);
+    for (let friend in student[key]) {
+      console.log(`${friend}::${student[key][friend]}`);
+    }
+  } else console.log(`${key}::${student[key]}`);
 }
