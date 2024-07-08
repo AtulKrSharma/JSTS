@@ -1,4 +1,4 @@
-let randomValue = function multi(val1, val2) {
+let randomValue = function (val1, val2) {
   return val1 * val2;
 };
 
